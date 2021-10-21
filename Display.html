@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+            background-color: lightblue;
+        }
+        .Block{
+            /* we can provide height and width to block level elements
+            which include
+            div, h1, p, ul, li */
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            padding: 20px;
+            background-color: lightcoral;
+        }
+        .inline{
+            /* height and width of span elements are equal to height and width of an element */
+            /* we can not give height and width to inline elements */
+            margin: 10px;
+            padding: 20px;
+            background-color: orange;
+        }
+        .inline-block{
+            /* height and width is equal to height/width of an element */
+            /* we can also set height and width of an element */
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            padding: 10px;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="class Block">Hello</div>
+    <span class = "inline">Hello span</span>
+    <div class="inline-block">hello inline block</div>
+</body>
+</html>

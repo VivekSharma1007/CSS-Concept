@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+            background-color: yellow;
+        }
+        .class{
+            height: 500px;
+            background-color: green;
+        }
+        .one{
+            height: 100px;
+            width: 100px;
+            background-color: lightblue;
+            /* margin se apne se bahar ka area badtha hai */
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        .two{
+            height: 100px;
+            width: 100px;
+            background-color: lightcoral;
+            /* padding se apne andar ka area badtha hai */
+            /* padding: 20px;   with the help of this padding the area is increased in all four directions*/ 
+            padding-top: 20px;
+            /* height of an element is 100px but due to padding the rendered 
+            height is increased */
+        }
+        .three{
+            /* to avoid the problem of padding which takes the area from outside 
+            we can use box-sizing. with the help of box sizing the area is taken from the 
+            inside of an element */
+            box-sizing: border-box;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="class one">1</div>
+    <div class="class two">2</div>
+    <div class="class three">3</div>
+</body>
+</html>
